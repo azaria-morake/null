@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+#define LEN 5 //define LENGTH macro to be 40
+#define COND "too tough" //define CONDITION to be tough
+
+void underscore(void); //underscore function prototype, epxects no values, expects no return type
+
+int main(void) //beginnig of the program
+
+{
+
+  underscore(); //fist usage of function
+
+  printf(" %s.\n", COND); //print CONDITION
+
+  underscore(); //second usage of function
+
+  return (0); //end program
+
+}
+
+void underscore(void) //define underscore function
+
+{
+
+int  count; //assing value to count so it can start appropriately
+  
+ for (count =1; count <= LEN; count++;) //start loop for as long as count is less than LENGTH
+    {
+     
+      putchar('_'); //as long as above condition is met, print an underscore
+
+    }
+  
+      putchar('\n'); //as long as the loop condition is met, print a new line to separate the underscore from other statments
+    
+}
